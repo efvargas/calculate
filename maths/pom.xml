@@ -103,26 +103,7 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
-					<execution>
-						<id>jacoco-check</id>
-						<goals>
-							<goal>check</goal>
-						</goals>
-						<configuration>
-							<rules>
-								<rule>
-									<element>PACKAGE</element>
-									<limits>
-										<limit>
-											<counter>LINE</counter>
-											<value>COVEREDRATIO</value>
-											<minimum>${coverage_quality_gate}</minimum>
-										</limit>
-									</limits>
-								</rule>
-							</rules>
-						</configuration>
-					</execution>
+					
 				</executions>
 			</plugin>
 
